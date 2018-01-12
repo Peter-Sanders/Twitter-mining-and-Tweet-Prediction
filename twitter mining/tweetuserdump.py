@@ -25,8 +25,8 @@ import pathlib
 maxTweets = 3200 # Some arbitrary large number
 tweetsPerQry = 100  # this is the max the API permits
 screen_name = input("User whos tweets are gathered: ")
-pathlib.Path('/Users/Pete/OneDrive/Code/twitter mining/training_data/%s' % screen_name).mkdir(parents=True, exist_ok=True)
-pathlib.Path('/Users/Pete/OneDrive/Code/twitter mining/stored_data/%s' % screen_name).mkdir(parents=True, exist_ok=True)
+pathlib.Path('/your file path/twitter mining/training_data/%s' % screen_name).mkdir(parents=True, exist_ok=True)
+pathlib.Path('/your file path/twitter mining/stored_data/%s' % screen_name).mkdir(parents=True, exist_ok=True)
 fName ='jsonfiles\\%s_tweets.txt' % screen_name# We'll store the tweets in a text file.
 #fName ='%s_tweets.csv' % screen_name# We'll store the tweets in a csv file.
 #fName ='%s_tweets.json' % screen_name# We'll store the tweets in a json file.
