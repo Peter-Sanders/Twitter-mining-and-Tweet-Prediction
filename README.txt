@@ -9,15 +9,15 @@ https://www.karambelkar.info/2015/01/how-to-use-twitters-search-rest-api-most-ef
 
 
 
-The main executable file is tweetuserdump.py
+The main executable file is use.py
 
 After downloading, imput your own twitter api credentials in their corresponding places
 
-In lines 28 and 29 of tweetuserdump.py, edit the path location such that its specific to where the twitter mining folder resides on your computer
-
-In line 104 of the same file, editing max_len changes the length of the outputed text
+In lines 33 and 34 of tweet_mine.py, edit the path location such that its specific to where the twitter mining folder resides on your computer
 
 Feel free to edit the MaxTweets value on line 25 to anything you feel like.
+
+Edit the max_len value on line 7 of write_tweet.py to change the length of the tweet
 
 
 #####################NOTE:###################################
