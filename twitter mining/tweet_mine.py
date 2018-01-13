@@ -2,10 +2,10 @@
 
 import tweepy
 
-consumer_key = "GQgaQvBkfNOONzu9y0urIfI7H"
-consumer_secret = "UplYIvcb9qxumcD3iZqgjJ0WYpzvFk1xWF6wWOETzeO2q66klv"
-access_key = "1682116747-zV3UOegdJ7KvOojxBZol3TkG7mHy8UrXvY3P9Ev"
-access_secret = "yXcpYkwwqacZWdVX0aH6bGfJmw0mnbXoFf6k2GbaEfwHE"
+consumer_key = "****"
+consumer_secret = "****"
+access_key = "****"
+access_secret = "****"
 
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
@@ -29,12 +29,9 @@ def tweet_mine(screen_name):
 
     maxTweets = 1000 # Some arbitrary large number
     tweetsPerQry = 100  # this is the max the API permits
-    #screen_name = input("User whos tweets are gathered: ")
-    pathlib.Path('/Users/Pete/OneDrive/Code/twitter mining/training_data/%s' % screen_name).mkdir(parents=True, exist_ok=True)
-    pathlib.Path('/Users/Pete/OneDrive/Code/twitter mining/stored_data/%s' % screen_name).mkdir(parents=True, exist_ok=True)
+    pathlib.Path('/your file path/twitter mining/training_data/%s' % screen_name).mkdir(parents=True, exist_ok=True)
+    pathlib.Path('/your file path/twitter mining/stored_data/%s' % screen_name).mkdir(parents=True, exist_ok=True)
     fName ='jsonfiles\\%s_tweets.txt' % screen_name# We'll store the tweets in a text file.
-    #fName ='%s_tweets.csv' % screen_name# We'll store the tweets in a csv file.
-    #fName ='%s_tweets.json' % screen_name# We'll store the tweets in a json file.
 
 
     # If results from a specific ID onwards are reqd, set since_id to that ID.
