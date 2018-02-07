@@ -1,5 +1,5 @@
 # Twitter-mining-and-Tweet-Prediction
-Taps into the Twitter api and dowloads up to 3200 tweets from any user, extracts the text from the tweet and trains it on a Markov chain model to produce an average tweet for that user
+Taps into the Twitter api and dowloads up to 3200 tweets from any user, extracts the text from the tweet and trains it on a Markov chain model to produce an average tweet for that user with the option of saving and playing back an mp3 recording of the tweet
 
 Markov chain code sourced from: https://github.com/G3Kappa/Adjustable-Markov-Chains
 
@@ -21,7 +21,4 @@ Feel free to edit the MaxTweets value on line 25 to anything you feel like.
 Edit the max_len value on line 7 of write_tweet.py to change the length of the tweet
 
 
-#####################NOTE:###################################
-
-Tweets greater than 140 characters will be cut off with an ellipsis, this will hopefully be resolved in future updates to this code.
-
+Full text is now available for all tweets thanks to the updated twitter api.
